@@ -2,7 +2,6 @@ import fs from "fs";
 import admin from "firebase-admin";
 import express from "express";
 import { db, connectToDb } from "./db.js";
-import articles from "../../my-blog-frontend/src/pages/article-content.jsx";
 
 const credentials = JSON.parse(fs.readFileSync("../credentials.json"));
 admin.initializeApp({ credential: admin.credential.cert(credentials) });
